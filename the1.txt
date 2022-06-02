@@ -1,1 +1,361 @@
-hhhhhhhh
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+$ git clone https://github.com/KateChiffa/JSON.git
+Cloning into 'JSON'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+
+ 6. Внутри локального JSON создать файл “new.json”.
+$ cd JSON
+$ touch new.json
+
+ 7. Добавить файл под гит.
+$ git add new.json
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new.json
+
+ 8. Закоммитить файл.
+$ git commit -m "new file json"
+[main a641fdf] new file json
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 276 bytes | 276.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KateChiffa/JSON.git
+   33ceabe..a641fdf  main -> main
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+  Visual studio code +
+$ git add new.json
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   new.json
+$ git commit -m "changes new"
+[main b5b6ae6] changes new
+ 1 file changed, 6 insertions(+)
+
+11. Отправить изменения на внешний репозиторий.
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KateChiffa/JSON.git
+   a641fdf..b5b6ae6  main -> main
+
+
+
+ 12. Создать файл preferences.json
+$ touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+ $ nano preferences.json
+$ git add Preferences.json
+$ git commit -m "preferences"
+[main bc96873] preferences
+ 1 file changed, 8 insertions(+)
+ create mode 100644 preferences.json
+
+14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+$ touch sklls.json
+$ nano sklls.json
+$ git add sklls.json
+$ git commit -m "sklls"
+[main 9d0aa1a] sklls
+ 1 file changed, 12 insertions(+)
+ create mode 100644 sklls.json
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 938 bytes | 938.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/KateChiffa/JSON.git
+   b5b6ae6..9d0aa1a  main -> main
+
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ Add new file
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Commit new file
+18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
++
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
++
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.70 KiB | 157.00 KiB/s, done.
+From https://github.com/KateChiffa/JSON
+   9d0aa1a..5423d76  main       -> origin/main
+Updating 9d0aa1a..5423d76
+Fast-forward
+ bug_report.json | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+ create mode 100644 bug_report.json
+
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
++
+ 22. Клонировать репозиторий XML на локальный компьютер.
+$ git clone https://github.com/KateChiffa/XML.git
+Cloning into 'XML'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+ 23. Внутри локального XML создать файл “new.xml”.
+$ touch new.xml
+
+ 24. Добавить файл под гит.
+$ git add new.xml
+
+ 25. Закоммитить файл.
+$ git commit -m "New file XML"
+[main d5d48eb] New file XML
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.xml
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KateChiffa/XML.git
+   f2b35a6..d5d48eb  main -> main
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ Visual studio code+
+$ git add new.xml
+$ git commit -m "Changexml"
+[main 6184c20] Changexml
+ 1 file changed, 6 insertions(+)
+
+28. Отправить изменения на внешний репозиторий.
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 365 bytes | 365.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KateChiffa/XML.git
+   d5d48eb..6184c20  main -> main
+
+
+ 29. Создать файл preferences.xml
+$ touch preferences.xml
+$ git add preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+Visual studio code+
+$ git add preferences.xml
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+$ touch sklls.xml
+$ git add sklls.xml
+
+ 32. Сделать коммит в одну строку.
+$ git commit -m "2newfiles"
+[main 5d5f8fc] 2newfiles
+ 2 files changed, 20 insertions(+)
+ create mode 100644 preferences.xml
+ create mode 100644 sklls.xml
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 812 bytes | 812.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KateChiffa/XML.git
+   6184c20..5d5f8fc  main -> main
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+Add file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
++
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
++
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
++
+ 38. Синхронизировать внешний и локальный репозиторий XML
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.13 KiB | 232.00 KiB/s, done.
+From https://github.com/KateChiffa/XML
+   5d5f8fc..4c8c559  main       -> origin/main
+Updating 5d5f8fc..4c8c559
+Fast-forward
+ bug_report.xml | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+ create mode 100644 bug_report.xml
+
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
++
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+$ git clone https://github.com/KateChiffa/TXT.git
+Cloning into 'TXT'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+$ touch new.txt
+
+ 4. Добавить файл под гит.
+$ git add new.txt
+
+
+ 5. Закоммитить файл.
+$ git commit -m "newtxt"
+[main b86b8c6] newtxt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.txt
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 256 bytes | 256.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KateChiffa/XML.git
+   4c8c559..b86b8c6  main -> main
+
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+ $ nano new.txt
+
+8. Отправить изменения на внешний репозиторий.
+$ git add txt
+$ git commit -m "changestxt"
+[main f465283] changestxt
+ 1 file changed, 4 insertions(+)
+
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KateChiffa/XML.git
+   b86b8c6..f465283  main -> main
+
+ 9. Создать файл preferences.txt
+$ touch preferences.txt
+
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+ $ nano preferences.txt
+$ git add preferences.txt
+
+11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+$ touch sklls.txt
+$ nano sklls.txt
+$ git add sklls.txt
+
+
+ 12. Сделать коммит в одну строку.
+$ git commit -m "2txtfiles"
+[main bc52108] 2txtfiles
+ 2 files changed, 15 insertions(+)
+ create mode 100644 preferences.txt
+ create mode 100644 sklls.txt
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 858 bytes | 858.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KateChiffa/TXT.git
+   31733ba..6a9019c  main -> main
+
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
++
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
++
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
++
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
++
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.07 KiB | 219.00 KiB/s, done.
+From https://github.com/KateChiffa/TXT
+   6a9019c..baf1f36  main       -> origin/main
+Updating 6a9019c..baf1f36
+Fast-forward
+ bug_report.txt | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 bug_report.txt
